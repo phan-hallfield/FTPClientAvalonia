@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:FTPClientAvalonia.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        d:DesignWidth="540" d:DesignHeight="600"
+        xmlns:views="clr-namespace:FTPClientAvalonia.Views"
+        x:Class="FTPClientAvalonia.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="FTP Client">
+    
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <views:LoginView/>
+
+    
+
+</Window>
