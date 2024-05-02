@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="FTPClientAvalonia/App.axaml" value="FTPClientAvalonia/FTPClientAvalonia.csproj" />
+        <entry key="FTPClientAvalonia/Views/LoginView.axaml" value="FTPClientAvalonia/FTPClientAvalonia.csproj" />
+        <entry key="FTPClientAvalonia/Views/LoginWindow.axaml" value="FTPClientAvalonia/FTPClientAvalonia.csproj" />
+        <entry key="FTPClientAvalonia/Views/MainWindow.axaml" value="FTPClientAvalonia/FTPClientAvalonia.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
