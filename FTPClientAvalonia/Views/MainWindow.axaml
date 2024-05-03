@@ -8,6 +8,9 @@
         x:Class="FTPClientAvalonia.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="FTP Client">
+        <!-- Background="Transparent" -->
+        <!-- TransparencyLevelHint="AcrylicBlur" -->
+        <!-- ExtendClientAreaToDecorationsHint="True"> -->
     
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -16,6 +19,7 @@
     </Design.DataContext>
 
     <views:LoginView/>
+    
 
     
 

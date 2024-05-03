@@ -1,0 +1,123 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:FTPClientAvalonia.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="540" d:DesignHeight="600"
+             x:Class="FTPClientAvalonia.Views.FtpDirectoryView"
+             x:DataType="vm:FtpDirectoryViewModel">
+    <DockPanel Margin="10" LastChildFill="True">
+        
+        <!-- Static Button Row at the bottom -->
+        <StackPanel DockPanel.Dock="Bottom">
+            <!-- Status Message Display -->
+            <TextBlock Text="{Binding StatusMessage}"
+                       Foreground="{Binding StatusColor}"
+                       HorizontalAlignment="Center"
+                       FontSize="20"
+                       FontWeight="UltraBold"
+                       TextWrapping="Wrap"
+                       Opacity="0.8"/>
+            
+            <StackPanel 
+                Orientation="Horizontal"
+                HorizontalAlignment="Center"
+                Spacing="10">
+                
+                <!-- File operations buttons, using GroupA for visibility toggle -->
+                <Button IsVisible="{Binding IsGroupAVisible}" 
+                    CornerRadius="10" Content="Download" Command="{Binding DownloadCommand}"/>
+                <Button IsVisible="{Binding IsGroupAVisible}" 
+                    CornerRadius="10" Content="Delete" Command="{Binding DeleteCommand}"/>
+                <Button IsVisible="{Binding IsGroupAVisible}" 
+                    CornerRadius="10" Content="Create Directory" Command="{Binding CreateDirectoryCommand}" />
+                <Button IsVisible="{Binding IsGroupAVisible}" 
+                    CornerRadius="10" Content="Upload File" Command="{Binding UploadCommand}"/>
+                
+                <!-- Create directory name input field, visibility is toggled -->
+                <TextBox Watermark="Directory name" 
+                         Text="{Binding NewDirectoryName}"
+                         IsVisible="{Binding IsDirectoryInputVisible}"
+                         CornerRadius="10" />
+                
+                <!-- Confirmation buttons for Create and Delete, visibility is toggled -->
+                <Button IsVisible="{Binding IsGroupBVisible}" 
+                    CornerRadius="10" Content="Confirm" Command="{Binding ConfirmCommand}" />
+                <Button IsVisible="{Binding IsGroupBVisible}" 
+                    CornerRadius="10" Content="Cancel" Command="{Binding CancelCommand}" />
+            </StackPanel>
+        </StackPanel>
+        
+        <ScrollViewer>
+        <StackPanel DockPanel.Dock="Top">
+            <!-- Title -->
+            <TextBlock Text="{Binding Title}" DockPanel.Dock="Top" HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Margin="0 10 0 10"
+                       FontSize="26" FontWeight="Medium"/>
+            
+            <!-- List Box Column Headers -->
+            <Border Margin="10 0 10 0" Background="#292929" CornerRadius="4">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" SharedSizeGroup="ColumnA"/>
+                        <ColumnDefinition Width="*" SharedSizeGroup="ColumnB"/>
+                        <ColumnDefinition Width="*" SharedSizeGroup="ColumnC"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" HorizontalAlignment="Center">Name</TextBlock>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Center">Size (bytes)</TextBlock>
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Center">Last Modified</TextBlock>
+                
+                </Grid>
+            </Border>
+            
+            
+            <!-- List Box for Displaying Items -->
+            <ListBox x:Name="DirectoryContents"
+                     Margin="0 0 0 10"
+                     Padding="10 0 10 10"
+                     CornerRadius="10"
+                     ItemsSource="{Binding Items}"
+                     SelectedItem="{Binding SelectedItem}"
+                     VerticalAlignment="Stretch">
+                <ListBox.Styles>
+                    <Style Selector="ListBoxItem">
+                        <Setter Property="Background" Value="#1c1c1c"></Setter>
+                        <Setter Property="Opacity" Value="0.9"></Setter>
+                        <Setter Property="Foreground" Value="#c9c9c9"></Setter>
+                        <Setter Property="Margin" Value="0 2 0 2"></Setter>
+                    </Style>
+                </ListBox.Styles>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="10 0 10 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" SharedSizeGroup="ColumnA"/>
+                                <ColumnDefinition Width="*" SharedSizeGroup="ColumnB"/>
+                                <ColumnDefinition Width="*" SharedSizeGroup="ColumnC"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0" BorderBrush="Gray" BorderThickness="0 0 1 0">
+                                <TextBlock Grid.Column="0" Text="{Binding Name}"/>
+                            </Border>
+                            <Border Grid.Column="1" BorderBrush="Gray" BorderThickness="1 0 1 0">
+                                <TextBlock Grid.Column="1" Text="{Binding Size}" Margin="0 0 20 0" HorizontalAlignment="Right"/>
+                            </Border>
+                            <Border Grid.Column="2" BorderBrush="Gray" BorderThickness="1 0 0 0">
+                                <Grid Grid.Column="2" Margin="20 0 20 0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="3*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="{Binding LastModified[0]}" HorizontalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding LastModified[1]}" HorizontalAlignment="Right"/>
+                                    <TextBlock Grid.Column="2" Text="{Binding LastModified[2]}" HorizontalAlignment="Right"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

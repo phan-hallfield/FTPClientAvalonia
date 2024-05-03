@@ -18,8 +18,9 @@
 		    <TextBlock Text="{Binding ErrorMessage}"
 		               HorizontalAlignment="Center"
 		               Foreground="IndianRed"
-		               FontSize="18"/>
-		    <Button Content="LOGIN"
+		               FontSize="15"
+		               TextWrapping="Wrap"/>
+		    <Button Content="LOGIN" CornerRadius="10"
 		            HorizontalAlignment="Stretch" 
 		            HorizontalContentAlignment="Center"
 		            VerticalContentAlignment="Center"
@@ -28,15 +29,16 @@
 	    
 	    <!-- Content -->
 	    <StackPanel Width="300" Spacing="">
-		    <Label Margin="5 5 5 0" FontFamily="">FTP Server IP</Label>
+		    <Image Height="200" Width="200" Stretch="Fill" Source="/Assets/hallfield_logo.png" Margin="0 0 0 20"/>
+		    <Label Margin="10 5 5 4" FontFamily="">FTP Server IP</Label>
 		    <TextBox  Watermark="FTP Server IP (ex: ftp://192.168.47:21)"
 		              Margin="5 0 5 10" Padding="10" Height="50"
 		              VerticalContentAlignment="Center"
 		              FontSize="16" MaxLines="1"
-		              Text="{Binding FtpServerIP}"
+		              Text="{Binding FtpServerIp}"
 		              CornerRadius="10">
 		    </TextBox>
-		    <Label Margin="5 5 5 0">Username</Label>
+		    <Label Margin="10 5 5 4">Username</Label>
 		    <TextBox  Watermark="Username"
 		              Margin="5 0 5 10" Padding="10" Height="50"
 		              VerticalContentAlignment="Center"
@@ -44,13 +46,14 @@
 		              Text="{Binding Username}"
 		              CornerRadius="10">
 		    </TextBox>
-		    <Label Margin="5 5 5 0">Password</Label>
+		    <Label Margin="10 5 5 4">Password</Label>
 		    <TextBox  Watermark="Password"
 		              Margin="5 0 5 10" Padding="10" Height="50"
 		              VerticalContentAlignment="Center"
 		              FontSize="16" MaxLines="1"
 		              Text="{Binding Password}"
-		              CornerRadius="10">
+		              CornerRadius="10"
+		              PasswordChar="*">
 		    </TextBox>
 	    </StackPanel>
         

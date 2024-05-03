@@ -13,15 +13,18 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FTPClientAvalonia
-build_property.ProjectDir = C:\Users\AnthonyPhan\source\repos\FTPClientAvalonia\FTPClientAvalonia\
+build_property.ProjectDir = /Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/AnthonyPhan/source/repos/FTPClientAvalonia/FTPClientAvalonia/App.axaml]
+[/Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/AnthonyPhan/source/repos/FTPClientAvalonia/FTPClientAvalonia/Views/LoginView.axaml]
+[/Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/Views/FtpDirectoryView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/AnthonyPhan/source/repos/FTPClientAvalonia/FTPClientAvalonia/Views/MainWindow.axaml]
+[/Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/Views/LoginView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

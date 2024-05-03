@@ -1,5 +1,4 @@
 using Avalonia.Controls;
-
 namespace FTPClientAvalonia.Views
 {
     public partial class MainWindow : Window
@@ -7,8 +6,6 @@ namespace FTPClientAvalonia.Views
         public MainWindow()
         {
             InitializeComponent();
-            this.Width = 600;
-            this.Height = 540;
         }
     }
 }

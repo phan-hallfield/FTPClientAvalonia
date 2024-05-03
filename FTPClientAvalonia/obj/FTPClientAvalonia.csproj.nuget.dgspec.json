@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AnthonyPhan\\source\\repos\\FTPClientAvalonia\\FTPClientAvalonia\\FTPClientAvalonia.csproj": {}
+    "/Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/FTPClientAvalonia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AnthonyPhan\\source\\repos\\FTPClientAvalonia\\FTPClientAvalonia\\FTPClientAvalonia.csproj": {
+    "/Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/FTPClientAvalonia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AnthonyPhan\\source\\repos\\FTPClientAvalonia\\FTPClientAvalonia\\FTPClientAvalonia.csproj",
+        "projectUniqueName": "/Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/FTPClientAvalonia.csproj",
         "projectName": "FTPClientAvalonia",
-        "projectPath": "C:\\Users\\AnthonyPhan\\source\\repos\\FTPClientAvalonia\\FTPClientAvalonia\\FTPClientAvalonia.csproj",
-        "packagesPath": "C:\\Users\\AnthonyPhan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AnthonyPhan\\source\\repos\\FTPClientAvalonia\\FTPClientAvalonia\\obj\\",
+        "projectPath": "/Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/FTPClientAvalonia.csproj",
+        "packagesPath": "/Users/tony/.nuget/packages/",
+        "outputPath": "/Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\AnthonyPhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/tony/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,13 +55,13 @@
               "target": "Package",
               "version": "[11.0.10, )"
             },
-            "Avalonia.Themes.Fluent": {
-              "target": "Package",
-              "version": "[11.0.10, )"
-            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.1, )"
+            },
+            "FluentAvaloniaUI": {
+              "target": "Package",
+              "version": "[2.0.5, )"
             },
             "Semi.Avalonia": {
               "target": "Package",
@@ -90,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
