@@ -8,168 +8,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a90c3ec-33aa-4576-a1ee-3d55ecdda0ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/Assets/file_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/Assets/folder_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/GlobalUsing.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/Services/FTPMethods.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/Services/FtpItemConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/ViewModels/CreateDirectoryViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/ViewModels/FtpDirectoryViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/Views/FtpDirectoryView.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/Views/FtpDirectoryView.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Controls.ItemsRepeater.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/FTPClientAvalonia" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/FluentAvalonia.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.sourcelink.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/MicroCom.Generator.MSBuild/Generator.Inputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/apphost" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FTPClientAvalonia/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FTPClientAvalonia/.idea/avalonia.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FTPClientAvalonia/Services/DialogManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FTPClientAvalonia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FTPClientAvalonia/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/App.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/App.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/App.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/Assets/Hallfield+Logo+-+Large-1920w.png" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/Assets/hallfield_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/FTPClientAvalonia.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/FTPClientAvalonia.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/Models/FtpItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/Models/FtpItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/ViewLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/ViewLocator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/ViewModels/FtpDirectoryViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/ViewModels/FtpDirectoryViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/ViewModels/LoginViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/ViewModels/LoginViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/ViewModels/MainWindowViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/Views/FtpDirectoryView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/Views/FtpDirectoryView.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/Views/LoginView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/Views/LoginView.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/Views/MainWindow.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/Views/MainWindow.axaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Base.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Base.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Controls.ColorPicker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Controls.ColorPicker.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Controls.DataGrid.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Controls.DataGrid.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Controls.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Controls.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.DesignerSupport.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.DesignerSupport.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Desktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Desktop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Diagnostics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Diagnostics.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Dialogs.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Dialogs.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Fonts.Inter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Fonts.Inter.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.FreeDesktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.FreeDesktop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Markup.Xaml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Markup.Xaml.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Markup.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Markup.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Metal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Metal.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.MicroCom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.MicroCom.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Native.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Native.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.OpenGL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.OpenGL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Remote.Protocol.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Remote.Protocol.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Skia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Skia.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Themes.Fluent.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Themes.Simple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Themes.Simple.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Win32.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.Win32.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.X11.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.X11.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Avalonia.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/CommunityToolkit.Mvvm.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/CommunityToolkit.Mvvm.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/FTPClientAvalonia.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/FTPClientAvalonia.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/FTPClientAvalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/FTPClientAvalonia.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/FTPClientAvalonia.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/FTPClientAvalonia.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/HarfBuzzSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/HarfBuzzSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/MicroCom.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/MicroCom.Runtime.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Microsoft.CodeAnalysis.Scripting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Microsoft.CodeAnalysis.Scripting.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Semi.Avalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Semi.Avalonia.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/SkiaSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/SkiaSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/System.IO.Pipelines.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/System.IO.Pipelines.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Tmds.DBus.Protocol.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/Tmds.DBus.Protocol.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-arm/native/libHarfBuzzSharp.so" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-arm/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-arm/native/libSkiaSharp.so" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-arm/native/libSkiaSharp.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-arm64/native/libHarfBuzzSharp.so" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-arm64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-arm64/native/libSkiaSharp.so" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-arm64/native/libSkiaSharp.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libHarfBuzzSharp.so" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libSkiaSharp.so" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libSkiaSharp.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-x64/native/libHarfBuzzSharp.so" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-x64/native/libHarfBuzzSharp.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-x64/native/libSkiaSharp.so" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/linux-x64/native/libSkiaSharp.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/osx/native/libAvaloniaNative.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/osx/native/libAvaloniaNative.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/osx/native/libHarfBuzzSharp.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/osx/native/libHarfBuzzSharp.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/osx/native/libSkiaSharp.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/osx/native/libSkiaSharp.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-arm64/native/av_libglesv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-arm64/native/av_libglesv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-arm64/native/libHarfBuzzSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-arm64/native/libHarfBuzzSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-arm64/native/libSkiaSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-arm64/native/libSkiaSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x64/native/av_libglesv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x64/native/av_libglesv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x64/native/libHarfBuzzSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x64/native/libHarfBuzzSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x64/native/libSkiaSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x64/native/libSkiaSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x86/native/av_libglesv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x86/native/av_libglesv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x86/native/libHarfBuzzSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x86/native/libHarfBuzzSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x86/native/libSkiaSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/runtimes/win-x86/native/libSkiaSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/original.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/original.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/original.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/original.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/original.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/original.ref.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/references" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/references" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/Avalonia/resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/FTPClientAvalonia.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/ref/FTPClientAvalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/ref/FTPClientAvalonia.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/refint/FTPClientAvalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/Debug/net8.0/refint/FTPClientAvalonia.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/FTPClientAvalonia.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/FTPClientAvalonia.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/FTPClientAvalonia.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/FTPClientAvalonia.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/FTPClientAvalonia.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/FTPClientAvalonia.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClientAvalonia/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClientAvalonia/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +59,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/292b05efaa7141b199751f5f5e932566d82000/04/e31fa3ff/CastHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/292b05efaa7141b199751f5f5e932566d82000/1d/efc356c8/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/59a3aa3055f9243975b99def145a48f4597c24e2d06a6951e046b6cef680f11e/StandardAssetLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/tony/RiderProjects/FTPClientAvalonia/FTPClientAvalonia/App.axaml" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -262,15 +125,40 @@
       <workItem from="1714606111717" duration="5919000" />
       <workItem from="1714612530337" duration="38910000" />
       <workItem from="1714684268377" duration="7526000" />
-      <workItem from="1714712139105" duration="11262000" />
+      <workItem from="1714712139105" duration="23993000" />
+      <workItem from="1714856361424" duration="2120000" />
+      <workItem from="1714858598947" duration="1538000" />
     </task>
+    <task id="LOCAL-00001" summary="Got all FTP functionality working except for Download and Upload. Need to figure out how to get a window to show up for users to select a file or folder">
+      <option name="closed" value="true" />
+      <created>1714724462255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714724462255</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Got all FTP functionality working except for Download and Upload. Need to figure out how to get a window to show up for users to select a file or folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got all FTP functionality working except for Download and Upload. Need to figure out how to get a window to show up for users to select a file or folder" />
   </component>
 </project>

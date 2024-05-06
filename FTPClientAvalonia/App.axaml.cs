@@ -22,7 +22,7 @@ namespace FTPClientAvalonia
             {
                 FtpCredentials creds = new FtpCredentials();
                 #if DEBUG
-                creds.ServerIp = "ftp://192.168.1.23:21";
+                creds.ServerIp = "192.168.1.23:21";
                 creds.Username = "tony";
                 creds.Password = "1234";
                 #endif

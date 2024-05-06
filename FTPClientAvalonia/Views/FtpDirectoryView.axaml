@@ -5,7 +5,9 @@
              xmlns:vm="clr-namespace:FTPClientAvalonia.ViewModels"
              mc:Ignorable="d" d:DesignWidth="540" d:DesignHeight="600"
              x:Class="FTPClientAvalonia.Views.FtpDirectoryView"
-             x:DataType="vm:FtpDirectoryViewModel">
+             x:DataType="vm:FtpDirectoryViewModel"
+             xmlns:services="using:FTPClientAvalonia.Services"
+             services:DialogManager.Register="{Binding}">
     <DockPanel Margin="10" LastChildFill="True">
         
         <!-- Static Button Row at the bottom -->

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FTPClientAvalonia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e333d7921b60d30da28ce54f91e29df095e31bbb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f0ad0d0b3883c84ba58d83ebb5b13f28914838a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FTPClientAvalonia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FTPClientAvalonia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

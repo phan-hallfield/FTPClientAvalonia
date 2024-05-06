@@ -1,5 +1,7 @@
 using System.Collections.ObjectModel;
+using System.Net.Mime;
 using System.Runtime.CompilerServices;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Media.Imaging;
 using CommunityToolkit.Mvvm.Input;
@@ -7,6 +9,7 @@ using FTPClientAvalonia.Views;
 using Avalonia.Platform.Storage;
 using Avalonia.Platform.Storage.FileIO;
 using CommunityToolkit.Mvvm.ComponentModel;
+using System.Linq;
 
 namespace FTPClientAvalonia.ViewModels;
 
@@ -33,8 +36,32 @@ public partial class FtpDirectoryViewModel : ViewModelBase
         if (!ValidateItemSelection())
             return;
 
-        // TODO: Add download
-
+        if (SelectedItem.IsDirectory)
+        {
+            StatusMessage = "Cannot download a directory";
+            StatusColor = "#c93e34";
+            return;
+        }
+        
+        // Open folder picker dialog
+        string folderPath = await this.OpenFolderDialogAsync("Select Download Folder");
+        
+        // Null folder path returned if user cancels on prompt
+        if (string.IsNullOrEmpty(folderPath))
+            return;
+        
+        StatusMessage = await FtpMethods.DownloadFile(_credentials, SelectedItem.Name, Path.Combine(folderPath, SelectedItem.Name));
+        if (StatusMessage.Contains("Success"))
+        {
+            StatusMessage = $"Downloaded {SelectedItem.Name} to {folderPath}\n {StatusMessage}";
+            StatusColor = "Green";
+            Items.Clear();
+            InitializeDataAsync();
+        }
+        else
+        {
+            StatusColor = "Red";
+        }
     }
     
     
@@ -43,6 +70,21 @@ public partial class FtpDirectoryViewModel : ViewModelBase
     private async Task Upload()
     {
         // TODO: Add upload
+        IStorageFile uploadFile = await this.OpenFileDialogAsync("Select File to Upload");
+
+        if (uploadFile == null)
+            return;
+        
+        StatusMessage = await FtpMethods.UploadFile(_credentials, uploadFile.TryGetLocalPath(), uploadFile.Name);
+        if (StatusMessage.Contains("Success"))
+        {
+            StatusMessage = $"{uploadFile.Name} uploaded\n{StatusMessage}";
+            StatusColor = "Green";
+            Items.Clear();
+            InitializeDataAsync();
+        }
+        else
+            StatusColor = "Red";
     }
     
     [RelayCommand]
@@ -55,8 +97,8 @@ public partial class FtpDirectoryViewModel : ViewModelBase
         IsGroupAVisible = false;
         IsGroupBVisible = true;
         
-        string itemType = _selectedItem.IsDirectory ? "directory" : "file";
-        string itemName = _selectedItem.Name;
+        string itemType = SelectedItem.IsDirectory ? "directory" : "file";
+        string itemName = SelectedItem.Name;
         StatusMessage = $"Are you sure you want to delete the {itemType} '{itemName}'?";
         StatusColor = "Red";
         
@@ -64,42 +106,43 @@ public partial class FtpDirectoryViewModel : ViewModelBase
         _confirmationTaskSource = new TaskCompletionSource<bool>();
 
         bool confirmed = await _confirmationTaskSource.Task;
-        if (confirmed)
-        {
-            if (_selectedItem.IsDirectory)
-            {
-                StatusMessage = await FtpMethods.DeleteDirectory(_credentials, itemName);
-                if (StatusMessage.Contains("Success"))
-                {
-                    Items.Clear();
-                    InitializeDataAsync();
-                    StatusColor = "Green";
-                }
-                else
-                    StatusColor = "Red";
-            }
-            else
-            {
-                StatusMessage = await FtpMethods.DeleteFile(_credentials, itemName);
-                if (StatusMessage.Contains("Success"))
-                {
-                    Items.Clear();
-                    InitializeDataAsync();
-                    StatusColor = "Green";
-                }
-                else
-                    StatusColor = "Red";
-            }
-            IsGroupAVisible = true;
-            IsGroupBVisible = false;
-        }
-        else
+
+        if (!confirmed)
         {
             StatusMessage = "";
             StatusColor = "Transparent";
             IsGroupAVisible = true;
             IsGroupBVisible = false;
+            return;
         }
+        
+        if (_selectedItem.IsDirectory)
+        {
+            StatusMessage = await FtpMethods.DeleteDirectory(_credentials, itemName);
+            if (StatusMessage.Contains("Success"))
+            {
+                Items.Clear();
+                InitializeDataAsync();
+                StatusColor = "Green";
+            }
+            else
+                StatusColor = "Red";
+        }
+        else
+        {
+            StatusMessage = await FtpMethods.DeleteFile(_credentials, itemName);
+            if (StatusMessage.Contains("Success"))
+            {
+                Items.Clear();
+                InitializeDataAsync();
+                StatusColor = "Green";
+            }
+            else
+                StatusColor = "Red";
+        }
+        IsGroupAVisible = true;
+        IsGroupBVisible = false;
+       
         
     }
     
@@ -118,42 +161,48 @@ public partial class FtpDirectoryViewModel : ViewModelBase
 
         bool confirmed = await _confirmationTaskSource.Task;
 
-        if (confirmed)
-        {
-            string directoryName = NewDirectoryName; // Need to figure out 
-            if (!string.IsNullOrEmpty(directoryName))
-            {
-                StatusMessage = await FtpMethods.CreateDirectory(_credentials, directoryName);
-                if (StatusMessage.Contains("Success"))
-                {
-                    Items.Clear();
-                    InitializeDataAsync();
-                    StatusColor = "Green";
-                }
-                else
-                {
-                    StatusColor = "#c93e34";
-                }
-            }
-            else
-            {
-                StatusMessage = "Can't create directory with empty name";
-                StatusColor = "#c93e34";
-            }
-            
-            // Reset buttons
-            IsGroupAVisible = true;
-            IsGroupBVisible = false;
-            IsDirectoryInputVisible = false;
-        }
-        else
+        // Reset buttons if user cancels
+        if (!confirmed)
         {
             StatusMessage = "";
             StatusColor = "Transparent";
             IsGroupAVisible = true;
             IsGroupBVisible = false;
             IsDirectoryInputVisible = false;
+            return;
         }
+        
+        string directoryName = NewDirectoryName;
+        
+        // Check if directory name is empty
+        if (string.IsNullOrEmpty(directoryName))
+        {
+            IsGroupAVisible = true;
+            IsGroupBVisible = false;
+            IsDirectoryInputVisible = false;
+            StatusMessage = "Can't create directory with empty name";
+            StatusColor = "#c93e34";
+            return;
+        }
+        
+        // Attempt directory creation and displsy status message
+        StatusMessage = await FtpMethods.CreateDirectory(_credentials, directoryName);
+        if (StatusMessage.Contains("Success"))
+        {
+            Items.Clear();
+            InitializeDataAsync();
+            StatusColor = "Green";
+        }
+        else
+        {
+            StatusColor = "#c93e34";
+        }
+        
+        // Reset buttons
+        IsGroupAVisible = true;
+        IsGroupBVisible = false;
+        IsDirectoryInputVisible = false;
+        
     }
     
     // Constructor
@@ -186,9 +235,17 @@ public partial class FtpDirectoryViewModel : ViewModelBase
             FtpItem item = FtpItemConverter.ConvertFromDirectoryDetail(detail);
             Items.Add(item);
         }
+        
+        // Sort by name
+        var sortedItems = Items.OrderBy(item => item.Name).ToList();
+        Items.Clear();
+        foreach (var item in sortedItems)
+        {
+            Items.Add(item);
+        }
     }
     
-    //Checks whether an item is selected
+    // Checks whether an item is selected
     private bool ValidateItemSelection()
     {
         if (_selectedItem == null)
@@ -197,8 +254,8 @@ public partial class FtpDirectoryViewModel : ViewModelBase
             StatusColor = "#c93e34";
             return false;
         }
-        else
-            return true;
+        
+        return true;
     }
     
     [RelayCommand]

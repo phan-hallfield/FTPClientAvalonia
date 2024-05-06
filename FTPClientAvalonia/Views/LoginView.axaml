@@ -31,7 +31,7 @@
 	    <StackPanel Width="300" Spacing="">
 		    <Image Height="200" Width="200" Stretch="Fill" Source="/Assets/hallfield_logo.png" Margin="0 0 0 20"/>
 		    <Label Margin="10 5 5 4" FontFamily="">FTP Server IP</Label>
-		    <TextBox  Watermark="FTP Server IP (ex: ftp://192.168.47:21)"
+		    <TextBox  Watermark="IP and Port (ex: 192.168.47:21)"
 		              Margin="5 0 5 10" Padding="10" Height="50"
 		              VerticalContentAlignment="Center"
 		              FontSize="16" MaxLines="1"

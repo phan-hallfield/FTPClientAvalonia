@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel;
+using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Avalonia;
@@ -48,34 +49,42 @@ public partial class LoginViewModel : ViewModelBase, INotifyPropertyChanged
     private async Task Login()
     {
         string status = await ValidateConnection(_credentials.ServerIp, _credentials.Username, _credentials.Password);
-        if (status == "Success")
-        {
-            // Navigate to FtpDirectoryView on successful Login
-            Avalonia.Threading.Dispatcher.UIThread.InvokeAsync(() =>
-            {
-                if (Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
-                {
-                    desktop.MainWindow.Content = new FtpDirectoryView
-                    {
-                        DataContext = new FtpDirectoryViewModel(_credentials)
-                    };
-                }
-            });
-        }
-        else
+
+        if (status != "Success")
         {
             ErrorMessage = status;
+            return;
         }
+        
+        // Append server ip to ftp:// for use in FtpDirectoryViewModel
+        _credentials.ServerIp = "ftp://" + _credentials.ServerIp;
+        
+        // Navigate to FtpDirectoryView on successful Login
+        Avalonia.Threading.Dispatcher.UIThread.InvokeAsync(() =>
+        {
+            if (Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+            {
+                desktop.MainWindow.Content = new FtpDirectoryView
+                {
+                    DataContext = new FtpDirectoryViewModel(_credentials)
+                };
+            }
+        });
     }
     
     
     private async Task<string> ValidateConnection(string ftpServerIP, string username, string password)
     {
         string status = "";
+
+        if (!IsIPAddressValidAndReachable(ftpServerIP.Split(':')[0]))
+        {
+            return "Invalid IP Address";
+        }
         
         try
         {
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(ftpServerIP);
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("ftp://" + ftpServerIP);
             request.Method = WebRequestMethods.Ftp.PrintWorkingDirectory;  // Minimal FTP command
             request.Credentials = new NetworkCredential(username, password);
 
@@ -87,18 +96,18 @@ public partial class LoginViewModel : ViewModelBase, INotifyPropertyChanged
         }
         catch (WebException ex)
         {
-            //TODO Bind to login failed error message
             FtpWebResponse response = (FtpWebResponse)ex.Response;
-            if (response != null)
+
+            if (response == null)
             {
-                Debug.WriteLine("FTP Error: {0} - {1}", response.StatusCode, response.StatusDescription);
-                status = $"FTP Error: {response.StatusCode} - {response.StatusDescription}";
-                response.Close();
+                status = "FTP Error: No response from server";
+                return status;
             }
-            else
-            {
-                Debug.WriteLine("FTP Error: No response from server");
-            }
+            
+            Debug.WriteLine("FTP Error: {0} - {1}", response.StatusCode, response.StatusDescription);
+            status = $"FTP Error: {response.StatusCode} - {response.StatusDescription}";
+            response.Close();
+            
             return status;  // Failed to connect or authenticate
         }
         catch (Exception ex)
@@ -109,6 +118,28 @@ public partial class LoginViewModel : ViewModelBase, INotifyPropertyChanged
         }
     }
     
+    public static bool IsIPAddressValidAndReachable(string ipAddress)
+    {
+        IPAddress address;
+        bool isValid = IPAddress.TryParse(ipAddress, out address);
+        if (!isValid)
+        {
+            return false; // IP address is not valid
+        }
+
+        using (Ping ping = new Ping())
+        {
+            try
+            {
+                PingReply reply = ping.Send(address, 1000); // Timeout is 1000 milliseconds
+                return reply.Status == IPStatus.Success;
+            }
+            catch (Exception)
+            {
+                return false; // Ping failed or IP address is not reachable
+            }
+        }
+    }
     
     public event PropertyChangedEventHandler? PropertyChanged;
 
